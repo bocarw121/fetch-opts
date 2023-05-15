@@ -1,10 +1,13 @@
 {
   "name": "fetch-opts",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "FetchOptionsBuilder is a fluent and easy-to-use utility to build fetch options for making HTTP requests with the Fetch API. It provides a convenient way to configure common options such as Bearer token, method, content type, body, credentials, and custom headers.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/cjs/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
