@@ -1,4 +1,4 @@
-import FetchOptionsBuilder from '../';
+import { FetchOptionsBuilder } from '../';
 
 describe('FetchOptionsBuilder', () => {
   it('should set Bearer token', () => {

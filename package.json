@@ -1,22 +1,16 @@
 {
   "name": "fetch-opts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FetchOptionsBuilder is a fluent and easy-to-use utility to build fetch options for making HTTP requests with the Fetch API. It provides a convenient way to configure common options such as Bearer token, method, content type, body, credentials, and custom headers.",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/cjs/index.d.ts",
+  "source": "src/index.ts",
+  "main": "lib/main.js",
+  "module": "lib/module.js",
+  "types": "lib/types.d.ts",
   "files": [
-    "dist/**/*"
+    "lib/**/*"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
-    "build": "tsc && tsc -p tsconfig.esm.json",
+    "build": "rm -rf lib && parcel build",
     "prepublishOnly": "npm run build",
     "test": "jest",
     "prepare": "husky install"
@@ -37,9 +31,12 @@
   "author": "Bocar Wane",
   "license": "MIT",
   "devDependencies": {
+    "@parcel/packager-ts": "^2.8.3",
+    "@parcel/transformer-typescript-types": "^2.8.3",
     "@types/jest": "^29.5.1",
     "husky": "^8.0.3",
     "jest": "^29.5.0",
+    "parcel": "^2.8.3",
     "prettier": "^2.8.8",
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
