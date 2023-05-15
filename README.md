@@ -77,4 +77,4 @@ Contributions are welcome from the community! If you're interested in contributi
 
 ## License
 
-This project is licensed under [MIT](./LICENCE)
+This project is licensed under [MIT](https://github.com/bocarw121/fetch-opts/blob/main/LICENCE)
