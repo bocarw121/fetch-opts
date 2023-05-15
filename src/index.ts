@@ -1,10 +1,8 @@
-import { Method, ContentType, Credentials } from './types';
-
 /**
  * FetchOptionsBuilder helps to build fetch options for making HTTP requests using the Fetch API.
  * It includes methods to set common options such as Bearer token, method, content type, body, credentials, and custom headers.
  */
-class FetchOptionsBuilder {
+export class FetchOptionsBuilder {
   private options: any;
 
   constructor() {
@@ -96,4 +94,40 @@ class FetchOptionsBuilder {
   }
 }
 
-export default FetchOptionsBuilder;
+// Types
+type Method =
+  | 'GET'
+  | 'POST'
+  | 'PUT'
+  | 'DELETE'
+  | 'HEAD'
+  | 'OPTIONS'
+  | 'CONNECT'
+  | 'TRACE'
+  | 'PATCH';
+
+type Credentials = 'omit' | 'same-origin' | 'include';
+
+type ContentType =
+  | 'application/json'
+  | 'application/xml'
+  | 'application/xhtml+xml'
+  | 'application/pdf'
+  | 'application/octet-stream'
+  | 'text/plain'
+  | 'text/html'
+  | 'text/css'
+  | 'text/csv'
+  | 'text/javascript'
+  | 'image/jpeg'
+  | 'image/png'
+  | 'image/gif'
+  | 'image/svg+xml'
+  | 'image/webp'
+  | 'audio/mpeg'
+  | 'audio/ogg'
+  | 'audio/wav'
+  | 'video/mp4'
+  | 'video/webm'
+  | 'video/ogg'
+  | 'multipart/form-data';

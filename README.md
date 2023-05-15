@@ -25,7 +25,7 @@ yarn add fetch-opts
 ## Usage
 
 ```ts
-import FetchOptionsBuilder from 'fetch-opts';
+import { FetchOptionsBuilder } from 'fetch-opts';
 
 // Create a new instance of the builder.
 const builder = new FetchOptionsBuilder();
