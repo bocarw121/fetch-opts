@@ -36,7 +36,7 @@ const requestBody = {
 };
 
 // Chain the methods to set the desired options.
-const fetchOptions =
+const fetchOptions = builder
   .method('POST')
   .contentType('application/json')
   .body(requestBody)
